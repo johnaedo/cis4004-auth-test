@@ -1,0 +1,241 @@
+/* Inside src/App.css */
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  text-align: center;
+  width: 30vw;
+  background-color: rgb(114, 110, 247);
+  color: white;
+  padding: 2vw 1vw;
+  border-radius: 10px 10px 0 0;
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 30vw;
+  padding: 2vw 1vw;
+  background-color: rgb(194, 194, 194);
+  border-radius: 0 0 10px 10px;
+}
+
+input {
+  border: 1px solid rgb(172, 171, 171);
+  border-radius: 10px;
+  padding: 1vw 1vw;
+  outline: none;
+  margin: 5px;
+}
+
+/* Fix for long text values like GoogleId */
+.truncated-value {
+  word-break: break-all;
+  font-family: monospace;
+  font-size: 0.9em;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  background-color: #f9f9f9;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+/* Profile image styling */
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #7270f7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #7270f7;
+  margin-bottom: 10px;
+}
+
+/* Improved styling for the profile page */
+.profile-container {
+  text-align: center;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profile-title {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.profile-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.profile-card h3 {
+  color: #333;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #7270f7;
+}
+
+.profile-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  table-layout: fixed;
+}
+
+.profile-table tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.profile-table tr:last-child {
+  border-bottom: none;
+}
+
+.profile-label {
+  padding: 12px 10px;
+  font-weight: bold;
+  color: #333;
+  width: 35%;
+  vertical-align: top;
+}
+
+.profile-value {
+  padding: 12px 10px;
+  color: #555;
+  width: 65%;
+  word-break: break-word;
+}
+
+.profile-navigation {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back-link {
+  color: #7270f7;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: #f0f0ff;
+  text-decoration: underline;
+}
+
+/* Dashboard styling */
+.dashboard-container {
+  text-align: center;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.dashboard-container h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.dashboard-container p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.view-profile-btn {
+  background-color: #4285f4;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.view-profile-btn:hover {
+  background-color: #3367d6;
+}
+
+.logout-btn {
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.google-signin-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  background-color: white;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .title {
+    width: 80vw;
+  }
+  
+  .App {
+    width: 80vw;
+  }
+  
+  .profile-container {
+    width: 90%;
+  }
+}
